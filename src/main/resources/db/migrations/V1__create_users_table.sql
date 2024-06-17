@@ -1,0 +1,7 @@
+CREATE TABLE users (
+  id TEXT PRIMARY KEY,
+  name TEXT NOT NULL,
+  username TEXT UNIQUE,
+  password TEXT,
+  created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);

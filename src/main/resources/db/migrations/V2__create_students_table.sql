@@ -1,0 +1,9 @@
+CREATE TABLE students (
+  id TEXT PRIMARY KEY,
+  name TEXT NOT NULL,
+  nim TEXT UNIQUE,
+  faculty TEXT NOT NULL,
+  major TEXT NOT NULL,
+  password TEXT UNIQUE,
+  created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
